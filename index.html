@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--?-->
+	<title>ポートフォリオサイト by 池田遼</title>
+	<meta name="description" content="webデザイナー兼ストリートパフォーマー、池田遼によるポートフォリオサイトです。">
+	<meta name="keywords" content="webデザイン,ポートフォリオ">
+	<meta name="author" content="池田遼">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/786d24a069.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="upside">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#works">Works</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main">
+			<section>
+				<h1>PORTFOLIO</h1>
+				<h2>by Ryo Ikeda</h2>
+			</section>
+		</div>
+		
+		<div id="about">
+			<div class="wrapper">
+				<section>
+					<h1><span>ーー</span>About<span>ーー</span></h1>
+					<img src="img/me.jpg" width="300" alt="プロフィール写真" id="profile">
+
+					<div class="intro" id="aboutme">
+							<h2>池田　遼<br>1994年11月3日生まれ</h2>
+							<p>卒業後、約1年半フィリピンの首都マニラで日本語教師として働くが、もっと自分のクリエイティブな側面を使った仕事がしたいと思い、webデザイナーになることを決意しました。<br>週末はストリートパフォーマーとしてありとあらゆる路上で演奏をしています。</p>
+					</div>
+					<div class="clear"></div>
+
+					<img src="img/me3.jpg" width="300" alt="ビーチで座っている写真" id="beach">
+					<div class="intro" id="pr">
+							<h2>自己PR</h2>
+							<p>「自分の限界は自分で決める」の信条の下、今まで興味を持ったことは最後の最後まで突き詰めてきました。
+							web業界ではまだまだ下っ端の下っ端ですが、こちらも意欲を持って学んでいき、突き詰めたいと思っています。<br/>
+							Photoshop,HTML&CSSはよく、J Queryは少し分かります。</p>
+					</div>
+
+					<div class="clear"></div>		
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	<div id="lowside">
+		<div id="works">
+			<div class="wrapper">
+				<section>
+					<h1><span>ーー</span>Works<span>ーー</span></h1>
+					<img src="img/justinhp.jpg" width="300px">
+					<div id="explain">
+						<h2>■友人の個人ホームページ</h2>
+						<p>フォトショップで作成。</p>
+						<p>制作期間はおよそ一週間。</p>
+						<p></p>
+					</div>
+					<div class="clear"></div>
+				</section>
+			</div>
+		</div>
+
+		<div id="contact">
+				<section>
+					<h1><span>ーー</span>Contact<span>ーー</span></h1>
+					<form>
+						<p>お仕事依頼、ご質問等、お気軽に<br>ご連絡ください。</p>
+						<label for="name">お名前:</label>
+						<input id="name" type="text" name="お名前">
+						<label for="mail">メールアドレス:</label>
+						<input id="mail" type="text" name="メールアドレス">
+						<label for="text">本文:</label>
+						<textarea id="text" name="本文" placeholder="お問い合わせ内容等、ご自由にお書きください。"></textarea>
+						<input id="submit" type="submit" value="送信する">
+					</form>
+				</section>
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy;All rights reservred.</p>
+		<a href="https://www.instagram.com/ryouslash/"><i class="fab fa-instagram fa-2x icon" id="insta"></i></a>
+		<a href="https://www.facebook.com/profile.php?id=100005892812320"><i class="fab fa-facebook fa-2x icon" id="facebook"></i></a>
+
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+ 		$('#main h1').hide().fadeIn('slow');
+  		$('#main h2').hide().fadeIn(4000);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/*-------------------------スマホ用(320px)-------------------------*/
+
+@media all and (min-width:320px){
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	font-family: 'PT Serif', serif;
+	color:#453c3c;
+}
+
+div#upside{
+	background-image:url("img/main2.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+div#lowside{
+	background-image:url("img/bricks.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* ヘッダーはここから */
+header{
+	background-color:rgba(255,255,255,0.8);
+	position:fixed;
+	top:0;
+	width:100%;
+	padding:10px 0px;
+}
+
+nav ul{
+	text-align:center;
+}
+
+nav ul li{
+	display:inline-block;
+	list-style:none;
+	font-size:20px;
+	padding:0px 20px;
+	font-family:'Lobster', serif;
+}
+
+nav ul li a{
+	color:#645555;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+}
+
+
+/*　メインはここから */
+div#main{
+	height:700px;
+}
+
+div#main h1{
+	text-align: center;
+	font-size: 50px;
+	padding:100px 0px 0px 0px;
+	letter-spacing:2px;
+	color:white;
+	text-shadow:0px 0px 10px #194562;
+	font-family: 'PT Serif', serif;
+}
+
+div#main h2{
+	text-align: center;
+	font-size:30px;
+	color:white;
+	text-shadow:0px 0px 10px #194562;
+	font-family:'Lobster', serif
+}
+
+
+/* アバウトはここから */
+div.wrapper{
+	padding-bottom:60px;
+}
+
+span{
+	letter-spacing: -0.2em;
+	margin:0px 10px;
+}
+
+div h1{
+	font-size:40px;
+	padding:40px 0px 20px 0px;
+	text-align:center;
+	color:#c99b56;
+	text-shadow:0px 0px 1px #3e3d3b;
+	font-family:'Lobster', serif;
+}
+
+div#about{
+	background-color:rgba(231,242,248,0.9);
+	text-align: center;
+}
+
+div.intro {
+	background-color: white;
+	width:260px;
+	margin:0px auto;
+	padding:30px;
+	border-radius: 10px;
+	margin-top:20px;
+}
+
+div.intro h2{
+	font-size:17px;
+	margin-bottom:10px;
+}
+
+div.intro p{
+	font-size: 14px;
+}
+
+div#about img#profile{
+	border-radius:150px;
+}
+
+div#about img#beach{
+	border-radius:150px;
+	margin-top:60px;
+}
+
+/* ワークスはここから */
+
+div#works{
+	height:auto;
+	text-align:center;
+	font-family: 'PT Serif', serif;
+}
+
+div#works section.works h1{
+	font-size:20px;
+	padding:0px 0px;
+}
+
+div#explain{
+	background-color: rgba(255,255,255,0.9);
+	margin:0 auto;
+	width:260px;
+	border-radius: 10px;
+	margin-top:20px;
+	padding:30px;
+}
+
+div#explain h2{
+	font-size:17px;
+}
+
+div#explain p{
+	font-size:14px;
+}
+
+/* フォームはここから */
+div#contact{
+	background-color:rgba(231,242,248,0.9);
+	padding-bottom:60px;
+}
+
+div#contact p{
+	font-size: 14px;
+	margin-bottom:20px;
+}
+
+form{
+	background-color:white;
+	padding: 30px;
+	border-radius: 10px;
+	margin:0 auto;
+	width:260px;
+}
+
+input,textarea{
+	width:260px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border:1px solid #e7f2f8;
+}
+
+input{
+	height:20px;
+}
+
+textarea{
+	height:80px;
+}
+
+label{
+	display:block;
+	font-weight:900;
+}
+
+#submit{
+	display:block;
+	border:1px solid #55585a;
+	height:50px;
+}
+
+/* フッターはここから */
+footer{
+	background-color:#022c41;
+	color:white;
+	padding:10px 0px;
+	text-align: center;
+	font-size:15px;
+}
+
+.icon{
+	opacity:0.7;
+	margin-top:5px;
+}
+
+.icon:hover{
+	opacity:1.0;
+}
+
+#insta{
+	margin-right:5px;
+	color:#3f729b;
+}
+
+#facebook{
+	color:#3b5998;
+}
+
+}
+
+
+
+
+/*-------------------------タブレット用(768px)-------------------------*/
+@media all and (min-width:768px){
+
+	/* ヘッダーはここから */
+	nav ul li{
+		font-size:30px;
+	}
+
+	/* メインはここから */
+	div#main h1{
+		font-size:80px;
+	}
+
+	/*　アバウトはここから */
+	div h1{
+		font-size: 50px;
+	}
+
+	div.wrapper{
+		margin:0 auto;
+		width:760px;
+	}
+
+	div#about img{
+		float:left;
+	}
+
+	div#about div#aboutme{
+		float:right;
+	}
+
+	div#about div img#beach{
+		float:right;
+	}
+
+	div#about div#pr{
+		float:left;
+		margin-top:60px;
+	}
+
+	div.intro{
+		width:300px;
+	}
+
+    .clear{
+    	clear:both;
+    }
+    /* ワークスはここから */
+    div#works img{
+    	float:left;
+    }
+
+    div#explain{
+    	float:right;
+    	width:300px;
+    }
+
+    div#explain p{
+	font-size: 16px;
+	}
+
+
+    /*　コンタクトはここから */
+    div#contact p{
+	font-size: 16px;
+	}
+
+    form{
+	width:400px;
+	}
+
+	input,textarea{
+		width:400px;
+	}
+
+	/*　フッターはここから */
+	footer{
+		font-size:16px;
+	}
+
+}
+
+
+
+/*-------------------------パソコン用(1024px)-------------------------*/
+@media all and (min-width:1024px){
+	/* アバウトはここから */
+	div.wrapper{
+		width:960px;
+	}
+
+	div.intro{
+		width:450px;
+	}
+
+	div.intro h2{
+		font-size:22px;
+	}
+
+	div.intro p{
+		font-size:17px;
+	}
+
+	div#explain{
+    	width:450px;
+    }
+
+    div#explain h2{
+    	font-size:22px;
+    }
+
+    div#explain p{
+	font-size: 17px;
+	}
+
+}
